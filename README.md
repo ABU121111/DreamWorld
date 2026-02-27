@@ -61,12 +61,12 @@ DreamWorld demonstrates significant improvements over baselines, particularly in
     <td><video src="https://github.com/user-attachments/assets/ac194c14-7678-4f53-8656-11479dd119f7" autoplay loop muted playsinline width="100%"></video></td>
     <td><video src="https://github.com/user-attachments/assets/4ea9ff9e-b0b6-42cd-ac01-4acbe0fa1af0" autoplay loop muted playsinline width="100%"></video></td>
     <td><video src="https://github.com/user-attachments/assets/432ac3d4-7fb1-4611-8e45-dbf2cb968989" autoplay loop muted playsinline width="100%"></video></td>
-    <td align="center" valign="middle">A cup of tea is carefully tilted in the space station, and the liquid floats in various directions.</td>
+    <td align="center" valign="middle">A cup of tea is tilted in the space station...</td>
   </tr>
   <tr>
     <td><video src="https://github.com/user-attachments/assets/6465a869-2297-4b42-ba65-8cb0fa074e6e" autoplay loop muted playsinline width="100%"></video></td>
     <td><video src="https://github.com/user-attachments/assets/b935e1a5-967e-4dc7-aaff-a55117fe7c23" autoplay loop muted playsinline width="100%"></video></td>
     <td><video src="https://github.com/user-attachments/assets/36a01fd3-0a54-426f-8baf-43536b67bba9" autoplay loop muted playsinline width="100%"></video></td>
-    <td align="center" valign="middle">Happy dog wearing a yellow turtleneck, studio, portrait, facing camera, dark background</td>
+    <td align="center" valign="middle">Happy dog wearing a yellow turtleneck...</td>
   </tr>
 </table>
