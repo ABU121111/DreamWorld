@@ -35,6 +35,10 @@ DreamWorld demonstrates significant improvements over baselines, particularly in
 | VideoJAM(Reimpl.) | 81.18 | 69.08 | 78.76 |
 | **DreamWorld (Ours)** | **83.49** | **70.89** | **80.97** |
 
+
+https://github.com/user-attachments/assets/c005bb5b-d449-405a-b092-84f6224e557a
+
+
 ## 🎥 Comparison Videos
 
 
