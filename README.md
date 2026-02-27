@@ -36,9 +36,6 @@ DreamWorld demonstrates significant improvements over baselines, particularly in
 | **DreamWorld (Ours)** | **83.49** | **70.89** | **80.97** |
 
 
-https://github.com/user-attachments/assets/c005bb5b-d449-405a-b092-84f6224e557a
-
-
 ## 🎥 Comparison Videos
 
 
@@ -50,27 +47,27 @@ https://github.com/user-attachments/assets/c005bb5b-d449-405a-b092-84f6224e557a
     <th width="19%" align="center">Prompt</th>
   </tr>
   <tr>
-    <td><video src="https://github.com/user-attachments/assets/735bfabb-7bef-484b-ace1-9d86ece2c00f" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/65a4e666-6a3d-4a1d-9290-8478d8e6cf04" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/cdae8cca-1bbc-4234-9594-a9bdf26fc48e" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/36a02d9b-2dd6-40b5-ae7e-1c6e47cac746" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/0ba95548-a249-4a79-b057-42a4034401c6" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/6b35a1ce-375e-4077-a852-074a216b35b3" autoplay loop muted playsinline width="100%"></video></td>
     <td align="center" valign="middle">Gwen Stacy reading a book, tilt up.</td>
   </tr>
   <tr>
-    <td><video src="https://github.com/user-attachments/assets/7496e3cf-a150-4d86-a450-67f9ebe935d1" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/10678aca-a32b-439f-83ef-a32686f4beae" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/68936096-2d75-41dc-ac36-5a29bd7e1eb4" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/487ee0b8-7ba6-4281-9550-07e7ec4daddd" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/e123ef42-0d6a-41a2-a8a0-e67ed8402ab2" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/5589d7d7-18db-42a3-9c1d-8c0d0a64b82d" autoplay loop muted playsinline width="100%"></video></td>
     <td align="center" valign="middle">A person is picking up the phone.</td>
   </tr>
   <tr>
-    <td><video src="https://github.com/user-attachments/assets/ac194c14-7678-4f53-8656-11479dd119f7" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/4ea9ff9e-b0b6-42cd-ac01-4acbe0fa1af0" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/432ac3d4-7fb1-4611-8e45-dbf2cb968989" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/f6f48d08-f629-46e1-8b81-6c03c91d65b0" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/e2ae9f2d-50ed-4bb8-b2c1-0cda19df8a9a" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/eea8924e-171f-4eb0-b865-97b16efc743a" autoplay loop muted playsinline width="100%"></video></td>
     <td align="center" valign="middle">A cup of tea is tilted in the space station...</td>
   </tr>
   <tr>
-    <td><video src="https://github.com/user-attachments/assets/6465a869-2297-4b42-ba65-8cb0fa074e6e" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/b935e1a5-967e-4dc7-aaff-a55117fe7c23" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/36a01fd3-0a54-426f-8baf-43536b67bba9" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/71f57bc0-11c2-4fba-bf6a-7844d09da597" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/16609298-48d6-4275-8e48-2191d349b8cb" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/3f5311f4-e1dd-4ff9-b4e9-cd0bc17268c9" autoplay loop muted playsinline width="100%"></video></td>
     <td align="center" valign="middle">Happy dog wearing a yellow turtleneck...</td>
   </tr>
 </table>
