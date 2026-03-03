@@ -1,7 +1,7 @@
 # DreamWorld: Unified World Modeling in Video Generation
 
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-red.svg)](https://arxiv.org/abs/2603.00466)
-> **DreamWorld** is a unified framework that integrates world knowledge into video generators via a Joint World Modeling Paradigm.<br>
+> **DreamWorld** is a unified framework that integrates complementary world knowledge into video generators via a Joint World Modeling Paradigm.<br>
 Boming Tan, Xiangdong Zhang, Ning Liao, Yuqing Zhang, Shaofeng Zhang, Xue Yang, Qi Fan, Yanyong Zhang
 
 ## 📖 Overview
