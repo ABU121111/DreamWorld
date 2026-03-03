@@ -43,8 +43,8 @@ DreamWorld demonstrates significant improvements over baselines, particularly in
   <tr>
     <th width="27%" align="center">Wan2.1</th>
     <th width="27%" align="center">VideoJAM</th>
-    <th width="27%" align="center">DreamWorld (Ours)</th>
-    <th width="19%" align="center">Prompt</th>
+    <th width="30%" align="center">DreamWorld (Ours)</th>
+    <th width="16%" align="center">Prompt</th>
   </tr>
   <tr>
     <td><video src="https://github.com/user-attachments/assets/36a02d9b-2dd6-40b5-ae7e-1c6e47cac746" autoplay loop muted playsinline width="100%"></video></td>
