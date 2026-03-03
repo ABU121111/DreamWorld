@@ -1,6 +1,7 @@
 # DreamWorld: Unified World Modeling in Video Generation
 
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-red.svg)](https://arxiv.org/abs/2603.00466)
+[![中文推广](https://img.shields.io/badge/宣传文案-中文-blue.svg)](docs/promo/dreamworld_promo_cn.md)
 > **DreamWorld** is a unified framework that integrates complementary world knowledge into video generators via a Joint World Modeling Paradigm. 
 
 ## 📖 Overview
