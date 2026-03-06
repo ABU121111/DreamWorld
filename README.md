@@ -44,11 +44,10 @@ DreamWorld demonstrates significant improvements over baselines, particularly in
 
 ## 🎥 Comparison Videos
 
-
 <table>
   <tr>
-    <th width="27%" align="center">Wan2.1</th>
-    <th width="27%" align="center">VideoJAM</th>
+    <th width="27%" align="center">Wan2.1(FT.)</th>
+    <th width="27%" align="center">VideoJAM(Reimpl.)</th>
     <th width="30%" align="center">DreamWorld (Ours)</th>
     <th width="16%" align="center">Prompt</th>
   </tr>
@@ -59,21 +58,33 @@ DreamWorld demonstrates significant improvements over baselines, particularly in
     <td align="center" valign="middle">Gwen Stacy reading a book, tilt up.</td>
   </tr>
   <tr>
-    <td><video src="https://github.com/user-attachments/assets/487ee0b8-7ba6-4281-9550-07e7ec4daddd" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/e123ef42-0d6a-41a2-a8a0-e67ed8402ab2" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/5589d7d7-18db-42a3-9c1d-8c0d0a64b82d" autoplay loop muted playsinline width="100%"></video></td>
-    <td align="center" valign="middle">A person is picking up the phone.</td>
+    <td><video src="https://github.com/user-attachments/assets/8cc6d651-4c25-49c6-a46a-723ffd5a9dd4" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2dfa0e51-538c-405f-991d-94f7b68a4e53" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2d6b9e02-f866-4e1c-bc20-dc91d97f2f59" autoplay loop muted playsinline width="100%"></video></td>
+    <td align="center" valign="middle">A hose sprays water onto a burning pile of tires...</td>
   </tr>
   <tr>
-    <td><video src="https://github.com/user-attachments/assets/f6f48d08-f629-46e1-8b81-6c03c91d65b0" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/e2ae9f2d-50ed-4bb8-b2c1-0cda19df8a9a" autoplay loop muted playsinline width="100%"></video></td>
-    <td><video src="https://github.com/user-attachments/assets/eea8924e-171f-4eb0-b865-97b16efc743a" autoplay loop muted playsinline width="100%"></video></td>
-    <td align="center" valign="middle">A cup of tea is tilted in the space station...</td>
+    <td><video src="https://github.com/user-attachments/assets/d3f16d1a-91ca-40b3-9be8-ad0321a763da" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/96b5c5f6-3147-4566-a46a-88ec06504eac" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/cb5fadf2-423c-4b9b-8df5-84a5583b1768" autoplay loop muted playsinline width="100%"></video></td>
+    <td align="center" valign="middle">A person wades through a swamp...</td>
   </tr>
   <tr>
     <td><video src="https://github.com/user-attachments/assets/71f57bc0-11c2-4fba-bf6a-7844d09da597" autoplay loop muted playsinline width="100%"></video></td>
     <td><video src="https://github.com/user-attachments/assets/16609298-48d6-4275-8e48-2191d349b8cb" autoplay loop muted playsinline width="100%"></video></td>
     <td><video src="https://github.com/user-attachments/assets/3f5311f4-e1dd-4ff9-b4e9-cd0bc17268c9" autoplay loop muted playsinline width="100%"></video></td>
     <td align="center" valign="middle">Happy dog wearing a yellow turtleneck...</td>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/7fd1ccba-174e-4cb5-8679-6a56894d447a" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/6a619dbf-1c8b-4244-bd34-070da42d094b" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/35124171-d49a-4a2f-8467-bc71ecbddea3" autoplay loop muted playsinline width="100%"></video></td>
+    <td align="center" valign="middle">  A potter's wheel is lightly poked with a tool...</td>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/3663d950-13e9-4057-a5fa-d48a5ebe5da5" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/04c1ff3f-ae70-4644-89ce-99bb01fe8340" autoplay loop muted playsinline width="100%"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/bb201cba-4dbe-419f-a97d-789bd3338941" autoplay loop muted playsinline width="100%"></video></td>
+    <td align="center" valign="middle">Two roller skaters perform a synchronized spin...</td>
   </tr>
 </table>
