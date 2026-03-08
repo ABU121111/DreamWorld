@@ -32,12 +32,12 @@ Below is the overview of the DreamWorld training and inference pipeline:
 Extensive evaluations show that DreamWorld significantly outperforms baselines and establishes a new standard for world models.
 
 ### VBench Evaluation
-DreamWorld demonstrates significant improvements over baselines, particularly in temporal dynamics, semantic understanding, and spatial relationships. **FT** denotes the fine-tuned version, and **Reimpl.** indicates our re-implementation of the method.
+DreamWorld demonstrates significant improvements over baselines, particularly in temporal dynamics, semantic understanding, and spatial relationships. **FT.** denotes the fine-tuned version, and **Reimpl.** indicates our re-implementation of the method.
 
 | Method | Quality Score | Semantic Score | Overall Score |
 | :--- | :--- | :--- | :--- |
 | Wan2.1-T2V-1.3B | 79.81 | 65.43 | 76.93 |
-| Wan2.1-T2V-1.3B(FT) | 81.26 | 68.47 | 78.71 |
+| Wan2.1-T2V-1.3B(FT.) | 81.26 | 68.47 | 78.71 |
 | VideoJAM(Reimpl.) | 81.18 | 69.08 | 78.76 |
 | **DreamWorld (Ours)** | **83.49** | **70.89** | **80.97** |
 
