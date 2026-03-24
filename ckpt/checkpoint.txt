@@ -1,0 +1,5 @@
+Store the checkpoint files include:
+- Wan2.1-T2V-1.3B-Diffusers
+- DINOv2
+- VGGT
+- RAFT

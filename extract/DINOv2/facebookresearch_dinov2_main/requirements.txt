@@ -1,0 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+omegaconf
+fvcore
+iopath
+submitit
+--extra-index-url https://pypi.nvidia.com
+cuml-cu11
+ss

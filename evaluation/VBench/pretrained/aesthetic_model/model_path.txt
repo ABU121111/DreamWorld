@@ -1,0 +1,1 @@
+curl -L --create-dirs -o ~/.cache/aesthetic_model/emb_reader/sa_0_4_vit_l_14_linear.pth https://raw.githubusercontent.com/LAION-AI/aesthetic-predictor/main/sa_0_4_vit_l_14_linear.pth

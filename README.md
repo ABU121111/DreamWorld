@@ -88,3 +88,177 @@ DreamWorld demonstrates significant improvements over baselines, particularly in
     <td align="center" valign="middle">Two roller skaters perform a synchronized spin...</td>
   </tr>
 </table>
+
+⚙️ Quick start
+---
+## 1. Environment setup
+
+Run the following commands in order.
+
+```bash
+git clone https://github.com/ABU121111/DreamWorld.git
+
+conda create -n dreamworld python=3.10 -y
+conda activate dreamworld
+
+cd DreamWorld
+pip install -r requirements.txt
+```
+
+## 2. Download Dataset
+
+We use the  [**WISA**](https://github.com/360CVGroup/WISA) dataset. The metadata JSON will be downloaded to `./data/wisa/`. Video zip parts will be downloaded to `./data/wisa/videos/` and will be extracted during preprocessing. We use parts 10 to 63 and then filter a 32K subset that meets our requirements.
+
+```bash
+pip install -U huggingface_hub
+
+# Download metadata JSON to ./data/wisa/
+huggingface-cli download --repo-type dataset qihoo360/WISA-80K \
+  --local-dir ./data/wisa \
+  --include "data/wisa-80k.json"
+
+# Download video zip parts to ./data/wisa/videos/ (parts 10-63)
+huggingface-cli download --repo-type dataset qihoo360/WISA-80K \
+  --local-dir ./data/wisa/videos \
+  --include "data/videos/1[0-9].zip"
+
+huggingface-cli download --repo-type dataset qihoo360/WISA-80K \
+  --local-dir ./data/wisa/videos \
+  --include "data/videos/2[0-9].zip"
+
+huggingface-cli download --repo-type dataset qihoo360/WISA-80K \
+  --local-dir ./data/wisa/videos \
+  --include "data/videos/3[0-9].zip"
+
+huggingface-cli download --repo-type dataset qihoo360/WISA-80K \
+  --local-dir ./data/wisa/videos \
+  --include "data/videos/4[0-9].zip"
+
+huggingface-cli download --repo-type dataset qihoo360/WISA-80K \
+  --local-dir ./data/wisa/videos \
+  --include "data/videos/5[0-9].zip"
+
+huggingface-cli download --repo-type dataset qihoo360/WISA-80K \
+  --local-dir ./data/wisa/videos \
+  --include "data/videos/6[0-3].zip"
+```
+
+## 3. Download Models
+```bash
+# Wan2.1-T2V-1.3B-Diffusers
+huggingface-cli download --repo-type model Wan-AI/Wan2.1-T2V-1.3B-Diffusers \
+  --local-dir ./ckpt/wan-t2v-1.3b-diffusers
+
+# VGGT
+huggingface-cli download --repo-type model facebook/VGGT-1B \
+  --local-dir ./ckpt/vggt
+
+# DINOv2
+wget -P ./ckpt/ https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth
+
+# RAFT
+wget -P ./ckpt/ https://dl.dropboxusercontent.com/s/4j4z58wuv8o0mfz/models.zip
+cd ckpt
+unzip models.zip
+rm -rf models.zip
+cd ..
+```
+
+
+## 4. Data Preprocessing
+
+```bash
+# 1) Extract all zip files under ./data/wisa/videos and flatten videos into the videos root
+# 2) Remove videos with fewer than 81 frames
+# 3) Generate ./data/wisa/prompt.txt and ./data/wisa/video.txt based on wisa-80k.json
+python ./data/wisa/preprocess.py \
+  --video_folder ./data/wisa/videos \
+  --json_path ./data/wisa/wisa-80k.json \
+  --output_dir ./data/wisa \
+  --min_frames 81
+```
+
+## 5. Feature Extraction
+
+You can extract the three feature types independently. The full set of commands is also available in `extract/pipline.sh`.
+
+Depending on your environment, each extractor may require its own extra dependencies. If you see missing packages or build errors, install the requirements for that specific module first.
+
+```bash
+mkdir -p ./data/features/dino ./data/features/vggt ./data/features/flow
+
+## Extract features for each video and write to ./data/features
+# DINOv2
+python ./extract/DINOv2/pca.py \
+  --video_folder ./data/wisa/videos \
+  --output_dir ./data/features/dino \
+  --ckpt_path ./ckpt/dinov2_vitb14_reg4_pretrain.pth
+
+# VGGT
+python ./extract/VGGT/fea.py \
+  --video_dir ./data/wisa/videos \
+  --output_dir ./data/features/vggt \
+  --model_path ./ckpt/vggt
+
+# Optical Flow
+python ./extract/RAFT/latent.py \
+  --video_folder ./data/wisa/videos \
+  --output_dir ./data/features/flow \
+  --raft_model ./ckpt/models/raft-things.pth \
+  --vae_checkpoint ./ckpt/wan-t2v-1.3b-diffusers
+```
+
+## 6. Training
+
+The training dataset config is `script/training/training.json`. The validation set config is `script/training/validation.json`. Before training, update `data_root` in `training.json` to your local dataset path. Using `./data/wisa` is recommended.
+
+```bash
+# You can edit the script to change GPU count and parallel settings
+bash ./script/training/train.sh
+```
+
+
+## 7. Inference
+
+Inference script: `./script/inference/inference.sh`.
+
+Before running, update the following items in the script:
+
+- `DATASET_FILE`, you can use `./script/inference/inference.json`
+- `--lora_path`, point to the LoRA weights `*.safetensors` produced by training
+- `--output_dir`, directory to save generated videos
+
+```bash
+# You can edit the script to change GPU count and output paths
+bash ./script/inference/inference.sh
+```
+Or run inference directly with our released checkpoints. Please download the weights from [**Huggingface**](https://huggingface.co/TeanABU/DreamWorld)
+
+```bash
+huggingface-cli download --repo-type model TeanABU/DreamWorld --local-dir ./ckpt
+```
+
+
+## 8. Evaluation
+
+This repo includes two evaluation toolkits:
+
+- WorldScore: see `evaluation/WorldScore/README.md` and `evaluation/WorldScore/evaluate.sh`
+- VBench: see `evaluation/VBench/README.md` and `evaluation/VBench/evaluate.sh`
+
+Reproducibility notes. We use **seed 42** by default. Even with the same seed, results may differ across devices due to randomness in video generation and evaluation. For more consistent comparisons, you can evaluate released videos or run inference using released [**DreamWorld**](https://huggingface.co/TeanABU/DreamWorld).
+
+
+## Citation
+
+```bibtex
+@misc{tan2026dreamworldunifiedworldmodeling,
+      title={DreamWorld: Unified World Modeling in Video Generation}, 
+      author={Boming Tan and Xiangdong Zhang and Ning Liao and Yuqing Zhang and Shaofeng Zhang and Xue Yang and Qi Fan and Yanyong Zhang},
+      year={2026},
+      eprint={2603.00466},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.00466}, 
+}
+```
