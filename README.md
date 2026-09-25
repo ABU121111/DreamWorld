@@ -9,7 +9,7 @@ Boming Tan, Xiangdong Zhang, Ning Liao, Yuqing Zhang, Shaofeng Zhang, Xue Yang, 
 - 🎉 Sept, 2025: Our work [**VideoREPA**](https://github.com/aHapBean/VideoREPA) is accepted by NeurIPS 2025, the first adaptation of REPA to video generation, transferring physical knowledge via Token Relation Distillation to improve the physical realism of text-to-video models.
 - 💥 Feb, 2026: [**DreamWorld**](https://github.com/ABU121111/DreamWorld) is available on [Arxiv](https://arxiv.org/abs/2603.00466).
 - 🚀 Mar, 2026: The code of DreamWorld has been released. Feel free to use and try our work.
-- 🥳 Sept, 2026: DreamWorld is accepted by NeurIPS 2026!
+- 🥳 Sept, 2026: **DreamWorld** is accepted by NeurIPS 2026!
 ## 📖 Overview
 
 Despite impressive progress in video generation, existing models remain limited to surface-level plausibility and lack a coherent, unified understanding of the world. Prior approaches typically incorporate only a single form of world-related knowledge or rely on rigid alignment strategies. 
