@@ -1,8 +1,19 @@
+<div align="center">
+
 # DreamWorld: Unified World Modeling in Video Generation
 
-[![Paper](https://img.shields.io/badge/Paper-ArXiv-red.svg)](https://arxiv.org/abs/2603.00466)
-> **DreamWorld** is a unified framework that integrates complementary world knowledge into video generators via a Joint World Modeling Paradigm.<br>
-Boming Tan, Xiangdong Zhang, Ning Liao, Yuqing Zhang, Shaofeng Zhang, Xue Yang, Qi Fan, Yanyong Zhang
+**Boming Tan, Xiangdong Zhang, Ning Liao, Jingtao Zhang, Yuqing Zhang, Xiaoqiu Zhong, Xiaosong Jia, Xue Yang, Yanyong Zhang, Shaofeng Zhang**
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2603.00466">
+    <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b.svg" alt="Paper">
+  </a>
+  <a href="#citation">
+    <img src="https://img.shields.io/badge/Citation-BibTeX-blue.svg" alt="Citation">
+  </a>
+</p>
+
+</div>
 
 ## 📰 News
 
@@ -255,7 +266,7 @@ Reproducibility notes. We use **seed 42** by default. Even with the same seed, r
 ```bibtex
 @misc{tan2026dreamworldunifiedworldmodeling,
       title={DreamWorld: Unified World Modeling in Video Generation}, 
-      author={Boming Tan and Xiangdong Zhang and Ning Liao and Yuqing Zhang and Shaofeng Zhang and Xue Yang and Qi Fan and Yanyong Zhang},
+      author={Boming Tan and Xiangdong Zhang and Ning Liao and Jingtao Zhang and Yuqing Zhang and Xiaoqiu Zhong and Xiaosong Jia and Xue Yang and Yanyong Zhang and Shaofeng Zhang},
       year={2026},
       eprint={2603.00466},
       archivePrefix={arXiv},
