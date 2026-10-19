@@ -8,6 +8,9 @@
   <a href="https://arxiv.org/abs/2603.00466">
     <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b.svg" alt="Paper">
   </a>
+  <a href="https://huggingface.co/TeanABU/DreamWorld">
+  <img src="https://img.shields.io/badge/Model-%20Hugging%20Face-FFD21E.svg" alt="Model">
+  </a>
   <a href="#citation">
     <img src="https://img.shields.io/badge/Citation-BibTeX-blue.svg" alt="Citation">
   </a>
